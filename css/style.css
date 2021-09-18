@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Body */
+body {
+  background-color: #f4dfd0;
+  font-family: "Andada Pro", serif; }
+
+.hero {
+  background-color: #5f7a61;
+  justify-content: center; }
+  .hero__intro {
+    display: flex;
+    text-align: center;
+    color: white; }
+    .hero__intro--title {
+      color: #fdd2bf;
+      text-align: center; }
+
+/* Carousel style */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+  outline: black;
+  background-size: 50%, 50%;
+  border-radius: 50%;
+  border: 1px solid #5f7a61;
+  background-image: none; }
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 30px;
+  color: #012443; }
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 30px;
+  color: #012443; }
+
+.title__carousel {
+  color: #fdd2bf;
+  font-weight: bold;
+  text-decoration-line: underline; }
+
+.text__carousel {
+  color: #444941; }
+
+/* Us Styles */
+.section {
+  background-color: #5f7a61;
+  padding: 2rem;
+  text-align: justify; }
+  .section__text {
+    color: white; }
+    .section__text--title {
+      display: inline-block;
+      position: relative;
+      color: #fdd2bf;
+      text-align: left;
+      font-weight: bold; }
+
+/*title effect*/
+h3 {
+  animation-duration: 5s;
+  animation-name: slidein; }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+.section2 {
+  background-color: #5f7a61;
+  padding: 2rem;
+  text-align: justify; }
+  .section2__text {
+    color: white; }
+    .section2__text--title {
+      color: #fdd2bf;
+      text-align: right;
+      font-weight: bold; }
+
+/* Intro section */
+.products {
+  background-color: #6b7aa1; }
+  .products__text {
+    color: white;
+    padding: 1rem;
+    text-align: justify; }
+    .products__text--title {
+      color: #fdd2bf;
+      padding: 1rem;
+      text-align: center; }
+
+.products__accesories {
+  background-color: #d37474;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem; }
+
+.sectionUno--form {
+  background: #fc9aa6;
+  background: linear-gradient(145deg, #fc9aa6 0%, #326041 100%);
+  border-color: 2px beige;
+  border-radius: 5px; }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .box__title {
+    text-align: center;
+    text-decoration: underline;
+    padding: 1rem;
+    gap: 1rem; }
+
+.us {
+  background-color: #6b7aa1;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center; }
+
+/* Footer */
+.footer__grid {
+  display: grid;
+  background-color: #6b7aa1;
+  color: #fdd2bf;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 100px 50px;
+  grid-template-areas: "header header header" "section1 section2 section3" "footer footer footer";
+  padding: 5px;
+  gap: 5 px;
+  justify-content: space-between;
+  justify-items: stretch;
+  align-items: stretch; }
+
+.footer__titles {
+  text-align: center; }
+
+.item {
+  border: 1px rgba(196, 255, 252, 0.473);
+  background-color: rgba(255, 255, 255, 0.301); }
+
+.item1 {
+  grid-area: header; }
+
+.item2 {
+  grid-area: section1; }
+
+.item3 {
+  grid-area: section2; }
+
+.item4 {
+  grid-area: section3; }
+
+.item5 {
+  grid-area: footer; }
